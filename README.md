@@ -1,4 +1,4 @@
-# fieldsjs
+# FieldsJS
 
 Submit forms in React without the complexity of importing a big forms framework. Fieldsjs is an ultra-lightweight (1k) helper with zero dependencies. Use plain vanilla html form elements or fancier UI components of your choice. Works with React Native too.
 
