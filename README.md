@@ -31,7 +31,7 @@ const ExampleForm = withFormState((props) => {
 					/>
 			</div>
 			<div>
-				<label for="yourname">Hometown</label>
+				<label for="hometown">Hometown</label>
 				<input
 					type="text"
 					id="hometown"
