@@ -6,6 +6,24 @@ You don't need a giant framework to submit forms in React. FieldsJS is an ultra-
 ## Get started
 `npm install fieldsjs --save`
 
+## Docs
+
+### withFormState()
+An HOC to wrap your form component. It will provide your form with 4 methods for managing form state
+
+### getFieldValue()
+Gets the current value of the field
+
+### setFieldValue()
+Sets the value of the field, typically used onChange or onBlur
+
+### submitForm()
+Performs the submit action that you have passed into the form component.
+
+### resetForm()
+Clears the values of all form elements
+
+
 ## Example
 ```
 import React from 'react';
@@ -18,6 +36,13 @@ const ExampleForm = withFormState((props) => {
 		setFieldValue,
 		submitForm
 	} = props;
+
+	const seasons = [
+		"Winter",
+		"Spring",
+		"Summer",
+		"Fall"
+	];
 
 	return (
 		<form>
@@ -45,9 +70,9 @@ const ExampleForm = withFormState((props) => {
 					id="season"
 					onChange={ e => setFieldValue('season', e.target.value) }
 					>
-					{(["Winter", "Spring", "Summer", "Fall"]).map((season, i)=>(
+					{seasons.map((season, i)=>(
 						<option
-							value="{season}"
+							value={season}
 							selected={getFieldValue('season') == season}
 							key={i}
 							>
