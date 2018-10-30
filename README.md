@@ -2,7 +2,6 @@
 
 You don't need a giant framework to submit forms in React. FieldsJS is an ultra-lightweight (1k) helper with zero dependencies. Use plain vanilla HTML form elements or fancier UI components of your choice. Works with React Native too.
 
-
 ## Get started
 `npm install fieldsjs --save`
 
